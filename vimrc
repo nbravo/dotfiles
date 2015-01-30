@@ -17,6 +17,9 @@ nnoremap <tab> %
 " Enable syntax highlighing
 :syntax on
 
+" show mode
+:set showmode
+
 " Don't have vim store backup or swap files.
 :set nobackup
 :set noswapfile
@@ -29,7 +32,7 @@ nnoremap <tab> %
 :set clipboard=unnamedplus
 
 :set autoindent
-:set paste
+nnoremap <Leader>p :set invpaste paste?<CR>
 :set cursorline
 :set ttyfast
 :set relativenumber
