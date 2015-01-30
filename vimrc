@@ -36,6 +36,5 @@ autocmd BufWritePre * :%s/\s\+$//e
 :set showmatch
 :set hlsearch
 :nmap <Leader>h :nohlsearch<CR>
-:set ignorecase
 :set smartcase
 :set gdefault
