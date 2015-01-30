@@ -11,12 +11,17 @@ nnoremap <silent> p p`]
 " Enter to go to end of file instead of G
 nnoremap <CR> G
 
-" Space + m to match (,{, etc instead of %
-nnoremap <Leader>m %
+" Tab to match (,{, etc instead of %
+nnoremap <tab> %
 
 :set title
 :set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 :set clipboard=unnamed
+
+:set autoindent
+:set cursorline
+:set ttyfast
+:set relativenumber
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
@@ -27,7 +32,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Search incrementally, with highlighting
 :set incsearch
+:set showmatch
 :set hlsearch
 :nmap <Leader>h :nohlsearch<CR>
 :set ignorecase
 :set smartcase
+:set gdefault
