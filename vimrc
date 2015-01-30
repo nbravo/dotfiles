@@ -1,3 +1,6 @@
+" Ensure we are out of crappy vi compatible mode.
+:set nocompatible
+
 let mapleader = "\<Space>"
 
 " Space + w instead of :w
@@ -20,12 +23,16 @@ nnoremap <tab> %
 " show mode
 :set showmode
 
+" Create Blank Newlines and stay in Normal mode
+nnoremap <silent> <Leader>j o<Esc>
+nnoremap <silent> <Leader>k O<Esc>
+
+" jj instead of Escape in insert mode!
+inoremap jj <Esc>
+
 " Don't have vim store backup or swap files.
 :set nobackup
 :set noswapfile
-
-" Ensure we are out of crappy vi compatible mode.
-:set nocompatible
 
 :set title
 :set expandtab tabstop=2 shiftwidth=2 softtabstop=2
