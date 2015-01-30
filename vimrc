@@ -14,6 +14,16 @@ nnoremap <CR> G
 " Tab to match (,{, etc instead of %
 nnoremap <tab> %
 
+" Enable syntax highlighing
+:syntax on
+
+" Don't have vim store backup or swap files.
+:set nobackup
+:set noswapfile
+
+" Ensure we are out of crappy vi compatible mode.
+:set nocompatible
+
 :set title
 :set expandtab tabstop=2 shiftwidth=2 softtabstop=2
 :set clipboard=unnamedplus
