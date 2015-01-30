@@ -23,15 +23,22 @@ nnoremap <tab> %
 " show mode
 :set showmode
 
-" Create Blank Newlines and stay in Normal mode
-nnoremap <silent> <Leader>j o<Esc>
-nnoremap <silent> <Leader>k O<Esc>
+" Create Blank Newlines and stay in Normal mode, move to new line
+nnoremap <silent> zj o<Esc>
+nnoremap <silent> zk O<Esc>
+
+" Create Blank Newlines and stay in Normal mode, stay on current line
+nnoremap <silent> <Leader>j o<Esc>k
+nnoremap <silent> <Leader>k O<Esc>j
 
 " Avoid shift key when exiting without saving
 nnoremap zq ZQ
 
 " jj instead of Escape in insert mode!
 inoremap jj <Esc>
+
+" Space + 0 instead of " + 0 for first register
+nnoremap <Leader>0 "0
 
 " Don't have vim store backup or swap files.
 :set nobackup
