@@ -27,6 +27,9 @@ nnoremap <tab> %
 nnoremap <silent> <Leader>j o<Esc>
 nnoremap <silent> <Leader>k O<Esc>
 
+" Avoid shift key when exiting without saving
+nnoremap zq ZQ
+
 " jj instead of Escape in insert mode!
 inoremap jj <Esc>
 
