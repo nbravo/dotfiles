@@ -16,9 +16,10 @@ nnoremap <tab> %
 
 :set title
 :set expandtab tabstop=2 shiftwidth=2 softtabstop=2
-:set clipboard=unnamed
+:set clipboard=unnamedplus
 
 :set autoindent
+:set paste
 :set cursorline
 :set ttyfast
 :set relativenumber
