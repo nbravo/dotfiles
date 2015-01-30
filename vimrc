@@ -1,6 +1,12 @@
 " Ensure we are out of crappy vi compatible mode.
 :set nocompatible
 
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
+
+colorscheme gotham256
+
 let mapleader = "\<Space>"
 
 " Space + w instead of :w
