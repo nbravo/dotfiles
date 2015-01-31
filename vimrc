@@ -115,8 +115,12 @@ map <C-l> <C-W>l
 " Turn off highlighting with Space + h
 :nmap <Leader>h :nohlsearch<CR>
 
-" Space + s to switch case instead of ~
+" Space + s to switch case of selectioninstead of ~
 nnoremap <Leader>s ~
+vnoremap <Leader>s ~
+
+" Space + c for change case operator
+nnoremap <Leader>c g~
 
 " Space + w instead of :w
 nnoremap <Leader>w :w<CR>
