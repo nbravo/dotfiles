@@ -71,6 +71,9 @@ inoremap hh <Esc>
 nnoremap B ^
 nnoremap E $
 
+" Use decimal rather than octal for nums with leading zeros
+:set nrformats=
+
 " Highlight last inserted text
 nnoremap gV `[v`]
 
