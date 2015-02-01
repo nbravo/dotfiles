@@ -1,3 +1,6 @@
+""" Plug-ins I think I want """
+" textobj-entire, syntastic, NERDtree, comments, tags
+
 " Ensure we are out of crappy vi compatible mode.
 :set nocompatible
 
@@ -80,6 +83,9 @@ nnoremap gV `[v`]
 " Line numbers are shown relative to current line rather than absolute
 :set relativenumber
 
+" This with relativenumber enables hybrid mode
+:set number
+
 " Remove trailing whitespace on save
 autocmd BufWritePre * :%s/\s\+$//e
 
@@ -113,7 +119,7 @@ map <C-l> <C-W>l
 """ Leader Maps """
 
 " Turn off highlighting with Space + h
-:nmap <Leader>h :nohlsearch<CR>
+:nmap <silent> <Leader>h :nohlsearch<CR>
 
 " Space + s to switch case of selectioninstead of ~
 nnoremap <Leader>s ~
@@ -137,3 +143,6 @@ nnoremap <Leader>0 "0
 
 " Toggle paste with Space + p
 nnoremap <Leader>p :set invpaste paste?<CR>
+
+" Toggle relative and absolute line numbers
+nnoremap <silent> <Leader>n :set relativenumber!<CR>
