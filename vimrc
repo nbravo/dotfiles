@@ -32,6 +32,13 @@ nnoremap <tab> %
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
+" Ctrl + p/n to move through the command history
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
+" Increase number of commands remembered
+:set history=200
+
 " Use Unix as the standard file type
 set ffs=unix,dos,mac
 
