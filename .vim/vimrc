@@ -99,6 +99,8 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Move up or down one line even if the line is wrapped
 :nmap j gj
 :nmap k gk
+:nmap ^ g^
+:nmap $ g$
 
 " Smart way to move between windows
 map <C-j> <C-W>j
