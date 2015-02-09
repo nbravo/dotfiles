@@ -23,6 +23,9 @@ nnoremap <CR> G
 " Tab to match (,{, etc instead of %
 nnoremap <tab> %
 
+" Use ' instead of `
+nnoremap ' `
+
 " Enable syntax highlighing
 :syntax on
 
