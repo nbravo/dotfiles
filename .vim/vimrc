@@ -66,6 +66,8 @@ inoremap hh <Esc>
 " Always show the status line
 :set laststatus=2
 
+let g:loaded_matchparen=1
+
 :set autoindent
 
 " Highlight under the current line
@@ -114,9 +116,6 @@ map <C-l> <C-W>l
 " Search incrementally, with highlighting
 :set incsearch
 
-" Highlight matching [{()}]
-:set showmatch
-
 " Highlight matching search terms
 :set hlsearch
 
@@ -144,8 +143,8 @@ nnoremap <Leader>c g~
 nnoremap <Leader>w :w<CR>
 
 " Create Blank Newlines and stay in Normal mode, stay on current line
-nnoremap <silent> <Leader>j :set paste<cr>m`o<esc>``:set nopaste<cr>
-nnoremap <silent> <Leader>k :set paste<cr>m`O<esc>``:set nopaste<cr>
+nnoremap <silent> <Leader>o :set paste<cr>m`o<esc>``:set nopaste<cr>
+nnoremap <silent> <Leader>O :set paste<cr>m`O<esc>``:set nopaste<cr>
 
 " Find merge conflict markers
 nnoremap <Leader>mc /\v^[<=>]{7}( .*\|$)<cr>
