@@ -50,8 +50,11 @@ nnoremap <silent> zk O<Esc>
 " Avoid shift key when exiting without saving
 nnoremap zq ZQ
 
-" jj instead of Escape in insert mode!
+" hh instead of Escape in insert mode!
 inoremap hh <Esc>
+
+" jj instead of Escape in insert mode!
+inoremap jj <Esc>
 
 " Don't have vim store backup or swap files.
 :set nobackup
@@ -130,7 +133,7 @@ map <C-l> <C-W>l
 " Turn off highlighting with Space + h
 :nmap <silent> <Leader>h :nohlsearch<CR>
 
-" Space + s to switch case of selectioninstead of ~
+" Space + s to switch case of selection instead of ~
 nnoremap <Leader>s ~
 vnoremap <Leader>s ~
 
