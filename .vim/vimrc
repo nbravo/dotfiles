@@ -49,6 +49,7 @@ nnoremap <silent> zk O<Esc>
 
 " Avoid shift key when exiting without saving
 nnoremap zq ZQ
+nnoremap z; ZQ
 
 " hh instead of Escape in insert mode!
 inoremap hh <Esc>
